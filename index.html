@@ -15,19 +15,23 @@
   <meta property="og:url" content="https://liquidazir.github.io/manciple-watch/">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b1d'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23c7d2fe' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%238d80ff'/%3E%3C/svg%3E">
+  <link rel="preload" href="landing/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="landing/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <style>
-    :root { color-scheme: dark; font-family: "Avenir Next", Avenir, Inter, ui-sans-serif, system-ui, sans-serif; background: #090b1d; color: #f8f9ff; }
+    @font-face { font-family: "DM Sans"; src: url("landing/fonts/dm-sans-latin.woff2") format("woff2"); font-style: normal; font-weight: 100 1000; font-display: swap; }
+    @font-face { font-family: "Space Grotesk"; src: url("landing/fonts/space-grotesk-latin.woff2") format("woff2"); font-style: normal; font-weight: 300 700; font-display: swap; }
+    :root { color-scheme: dark; font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif; background: #090b1d; color: #f8f9ff; font-synthesis: none; }
     * { box-sizing: border-box; }
     body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse 70% 75% at 73% 44%, #1d2154 0%, #0d1029 50%, #090b1d 100%); }
     .shell { max-width: 1380px; min-height: 100vh; margin: auto; padding: 40px clamp(22px, 5vw, 84px) 35px; display: flex; flex-direction: column; }
     header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-    .brand { display: inline-flex; align-items: center; gap: 11px; color: #fff; text-decoration: none; font-size: 24px; font-weight: 800; letter-spacing: -.035em; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: #fff; text-decoration: none; font-family: "Space Grotesk", sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -.05em; }
     .brand-mark { width: 29px; height: 29px; border: 2px solid #c7d2fe; border-radius: 50%; display: grid; place-items: center; }
     .brand-mark::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #8d80ff; }
     header small { color: #aab4d3; font-size: 12px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
     main { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 480px); align-items: center; gap: clamp(30px, 6vw, 100px); padding: 48px 0; }
     .eyebrow { color: #b4abff; font-size: 13px; font-weight: 800; letter-spacing: .21em; text-transform: uppercase; }
-    h1 { max-width: 760px; margin: 24px 0 24px; font-size: clamp(58px, 7.5vw, 112px); line-height: .98; letter-spacing: -.075em; font-weight: 900; }
+    h1 { max-width: 760px; margin: 24px 0 24px; font-family: "Space Grotesk", sans-serif; font-size: clamp(58px, 7.5vw, 112px); line-height: 1.02; letter-spacing: -.06em; font-weight: 600; }
     h1 span { display: block; color: #c7d2fe; }
     .lead { max-width: 580px; margin: 0; color: #d2d8f2; font-size: clamp(20px, 2vw, 28px); line-height: 1.4; }
     .rule { width: 100px; height: 5px; margin: 33px 0; border-radius: 10px; background: #8176fa; }
